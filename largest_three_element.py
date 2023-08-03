@@ -48,3 +48,17 @@ class ArrayImplementation:
             arr[count] = 0
             count=count+1
         print(arr)
+
+    def segregateEvenOdd(self, arr,n):
+        temp =[0] *  (n-1)
+        count = 0
+        for i in range(len(arr) - 1):
+            if (arr[i] % 2 == 0):
+                temp[count] = arr[i]
+                count = count + 1
+        for i in range(len(arr) - 1):
+            if arr[i] % 2 != 0:
+                temp[count] = arr[i]
+                count = count+1
+
+        print(temp)
