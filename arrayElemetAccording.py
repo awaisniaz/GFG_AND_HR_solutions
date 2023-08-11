@@ -6,6 +6,5 @@ def ArrangeWithIndex(indexarr, arr):
 
     print(newarr)
 
-
 if __name__ == "__main__":
     ArrangeWithIndex([1, 0, 2], [10, 11, 12])
