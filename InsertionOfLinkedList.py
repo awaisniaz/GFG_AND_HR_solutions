@@ -51,6 +51,22 @@ class LinkedList:
         return count
 
     def reverseLinkedLIst(self):
+        pass
+    def deletionFromFront(self):
+        temp = self.head.next
+        self.head = temp
+    def deleteAllList(self):
+        self.head = None
+    def getNthElement(self,key):
+        temp = self.head
+        count = 0
+        while(temp):
+            if(count == key):
+                print(temp.data)
+                return  temp.data
+            temp = temp.next
+            count = count + 1
+        print("Key Not Found")
 
 
 
@@ -61,12 +77,15 @@ if __name__=="__main__":
     # ll.visitLinkedlist()
     ll.insertAtFront(56)
     ll.insertAtFront(78)
-    ll.searchElement(100)
-    ll.insertAtMiddle(100,46)
-    ll.searchElement(100)
-    print(ll.lengthOfElement())
+    # ll.searchElement(100)
+    # ll.insertAtMiddle(100,46)
+    # ll.searchElement(100)
+    # print(ll.lengthOfElement())
+    # ll.deletionFromFront()
 
-
+    # ll.visitLinkedlist()
+    # ll.deleteAllList()
+    ll.getNthElement(2)
     ll.visitLinkedlist()
 
 
