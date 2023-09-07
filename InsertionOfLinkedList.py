@@ -67,6 +67,7 @@ class LinkedList:
             temp = temp.next
             count = count + 1
         print("Key Not Found")
+
 if __name__=="__main__":
     ll  = LinkedList()
     ll.insertAtFront(50)
