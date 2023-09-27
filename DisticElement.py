@@ -1,4 +1,5 @@
 def DisticElemen(arr):
+    
     newarr = []
     for i in range(len(arr)):
         if(i == arr.index(arr[i])):
